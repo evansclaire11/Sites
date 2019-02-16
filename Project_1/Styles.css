@@ -1,7 +1,6 @@
 img {
-    src: "Octopus.jpg";
     max-width: 200%;
-    height: 700px;
+    height: 850px;
     width: 110%;
     float: left;
 }
@@ -51,14 +50,21 @@ p {
     line-height: 2.2;
 }
 
-/*i am not sure how to edit either image individually, so right now the Author photo is very much warped /*
+p #pullquote {
+    background-color: #fdcd96;
+    margin-right: -600px;
+    margin-left: -600px;
+    font-size: 25px;
+}
+
+/*i am not sure how to edit either image individually, so right now the Author photo is very much warped */
 /*img {
-    margin-right: 400px;
-    margin-left: 750px;
-    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 10%;
     height: 200px;
-    width: 50%;
-    src: "Carl_Zimmer.jpg";/*
+    width: 10%;
+
 }
 
 hr {
