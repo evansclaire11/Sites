@@ -1,22 +1,30 @@
+body {
+    background-color: whitesmoke;
+    width: 1700px;
+}
+
 .octopus-image {
     max-width: 200%;
     height: auto;
     width: 1700px;
-    margin-top: 55px;
+    margin-top: 70px;
     margin-bottom: 50px;
     margin-left: 500px;
     margin-right: 200px;
 }
 
-body {
-    background-color: whitesmoke;
+figcaption {
+    font-size: 13px;
+    color: #808080;
+    fill: #fdcd96;
 }
+
 
 .one {
     width: 1700px;
     height: 0x;
     margin: 20px auto;
-    margin-top: 50px;
+    margin-top: 60px;
     border: 5px solid #d07f7d;
 }
 
@@ -30,7 +38,8 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 96px;
     color: #d07f7d;
     margin-right: 300px;
     margin-left: 650px;
@@ -39,6 +48,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
     color: #808080;
     margin-right: 300px;
@@ -50,6 +60,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Noto Sans', sans-serif;
     margin-right: 300px;
     margin-left: 650px;
     color: #808080;
@@ -58,6 +69,7 @@ h3 {
 }
 
 h4 {
+    font-family: 'Noto Sans', sans-serif;
     margin-right: 300px;
     margin-left: 650px;
     font-size: 16px;
@@ -66,13 +78,22 @@ h4 {
 }
 
 p {
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     margin-right: 300px;
     margin-left: 650px;
     line-height: 2.2;
 }
 
+#quote1 p {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    margin-left: 450;
+    color: #fdcd96;
+}
+
 #pullquote p {
+    font-family: 'Noto Sans', serif;
     background-color: #fdcd96;
     margin-right: 500px;
     margin-left: 500px;
@@ -83,23 +104,30 @@ p {
 }
 
 .author-photo {
-    max-width: 100%;
-    height: auto;
-    width: 1%;
-    padding: 20px #fdcd96;
-    border: 5px solid #fdcd96;
+    width: 50%;
+    float: left;
+    /*border: 5px solid #fdcd96;*/
+    margin-left: 100px;
+    margin-right: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-/*
-hr {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    background-color: #666;
-    opacity: 0.5;
-
+.footer {
+    width: 1700px;
+    height: 500px;
+    background-color: #fdcd96;
+    margin-top: 100px;
+    /*border: 500px solid #fdcd96;
+    padding: 500px #fdcd96; */
 }
+
+/*hr {
+    width: 100%;
+    height: 5px;
+    fill: #d07f7d;
+    color: #d07f7d;
+}*/
 
 
 
