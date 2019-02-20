@@ -1,12 +1,22 @@
 body {
     background-color: whitesmoke;
-    width: 1700px;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    border-top: 10px solid #fdcd96;
+    border-bottom: 10px solid #fdcd96;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .octopus-image {
-    max-width: 200%;
+    width: 1000px;
     height: auto;
-    width: 1700px;
     margin-top: 70px;
     margin-bottom: 50px;
     margin-left: 500px;
@@ -15,26 +25,11 @@ body {
 
 figcaption {
     font-size: 13px;
-    color: #808080;
     fill: #fdcd96;
-}
-
-
-.one {
-    width: 1700px;
-    height: 0x;
-    margin: 20px auto;
-    margin-top: 60px;
-    border: 5px solid #d07f7d;
-}
-
-.two {
-    width: 1700px;
-    height: 0px;
-    margin: 20px auto;
-    border: 5px solid #d07f7d;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-top: -50px;
+    background-color: whitesmoke;
+    position: absolute;
+    border: 3px solid whitesmoke;
 }
 
 h1 {
@@ -43,7 +38,7 @@ h1 {
     color: #d07f7d;
     margin-right: 300px;
     margin-left: 650px;
-    margin-top: -20px;
+    margin-top: 10px;
     line-height: 1.3;
 }
 
@@ -83,13 +78,28 @@ p {
     margin-right: 300px;
     margin-left: 650px;
     line-height: 2.2;
+    margin-bottom: 20px;
 }
 
-#quote1 p {
+#quote1 {
     font-family: 'Merriweather', serif;
     font-size: 50px;
     margin-left: 450;
+    font-weight: 700;
     color: #fdcd96;
+    margin-top: -30px;
+    margin-bottom: -60px;
+}
+
+
+#quote2 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    margin-left: -100;
+    font-weight: 700;
+    color: #fdcd96;
+    margin-top: -30px;
+    margin-bottom: -60px;
 }
 
 #pullquote p {
@@ -104,13 +114,34 @@ p {
 }
 
 .author-photo {
-    width: 50%;
-    float: left;
-    /*border: 5px solid #fdcd96;*/
-    margin-left: 100px;
+    width: 9%;
+    border: 10px solid #fdcd96;
+    margin-left: 650px;
     margin-right: 350px;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;
+    background-color: #fdcd96;
+}
+
+#author_header {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    margin-left: 860px;
+    margin-top: -360px;
+    margin-right: 300px;
+    text-transform: uppercase;
+    color: #808080;
+    position: absolute;
+}
+
+#author_about {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #808080;
+    margin-left: 860px;
+    margin-top: -300px;
+    margin-right: 300px;
+    position: absolute;
 }
 
 .footer {
