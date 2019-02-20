@@ -9,7 +9,6 @@ GENERAL
 
 body {
     background-color: whitesmoke;
-    width: 100%;
 }
 
 img {
@@ -21,23 +20,15 @@ TEXT STYLES
 ==============*/
 
 header {
-    border-bottom: 10px solid #fdcd96;
-    border-top: 10px solid #fdcd96;
+    border-bottom: 10px solid #018a80;
+    border-top: 10px solid #018a80;
     margin: 50px 0 100px;
 }
 
-figcaption {
-    background-color: whitesmoke;
-    border: 3px solid whitesmoke;
-    font-size: 13px;
-    margin-top: -50px;
-    position: absolute;
-}
-
 h1 {
-    color: #d07f7d;
+    color: #a72323;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 96px;
+    font-size: 95px;
     margin: 10px 300px 50px 650px;
 }
 
@@ -73,18 +64,26 @@ p {
     margin: 30px 300px 30px 650px;
 }
 
+figcaption {
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
+    font-size: 13px;
+    margin-top: -50px;
+    position: absolute;
+}
+
 /*===========
 IMAGES
 =============*/
 
 .octopus-image {
-    width: 110%;
     margin: 70px 200px 50px 500px;
+    width: 110%;
 }
 
 .author-photo {
-    background-color: #fdcd96;
-    border: 10px solid #fdcd96;
+    background-color: #018a80;
+    border: 10px solid #018a80;
     margin: 150px 350px 100px 650px;
     width: 9%;
 }
@@ -95,43 +94,57 @@ CLASSES
 
 .quote2,
 .quote1 {
-    color: #fdcd96;
-    font-family: 'Merriweather', serif;
+    color: #018a80;
     font-size: 50px;
     font-weight: 700;
     margin: -30px 0 -60px 600px;
 }
 
+/*pullquote*/
+
+.quote2,
+.quote1,
+.author-description {
+    font-family: 'Merriweather', serif;
+}
+
 .pullquote p {
-    background-color: #fdcd96;
-    border: 10px #fdcd96;
-    font-family: 'Noto Sans', serif;
+    background-color: #018a80;
+    border: 10px #018a80;
+    color: #ffffff;
     font-size: 20px;
     margin: 10px 500px 10px;
     padding: 20px;
 }
 
+.pullquote p,
 .author_header {
     font-family: 'Noto Sans', sans-serif;
+}
+
+/*about the author*/
+
+.author-header {
     font-size: 25px;
     margin: -360px 300px 0px 850px;
     text-transform: uppercase;
 }
 
-.author_about {
-    font-family: 'Merriweather', serif;
+.author-description {
     font-size: 15px;
     margin: -300px 300px 0 850px;
 }
 
-.author_header,
-.author_about {
+.author-header,
+.author-description {
     color: #808080;
     position: absolute;
 }
 
+/*footer*/
+
 .footer {
-    background-color: #fdcd96;
+    background-color: #a72323;
     height: 500px;
     margin-top: 100px;
     width: 100%;
