@@ -1,3 +1,12 @@
+/* ==========
+GENERAL
+=============*/
+
+*:before,
+*:after {
+    Box-sizing: Border-box;
+}
+
 body {
     background-color: whitesmoke;
     width: 100%;
@@ -7,147 +16,123 @@ img {
     max-width: 100%;
 }
 
-header {
-    border-top: 10px solid #fdcd96;
-    border-bottom: 10px solid #fdcd96;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
+/* ===========
+TEXT STYLES 
+==============*/
 
-.octopus-image {
-    width: 1000px;
-    height: auto;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    margin-left: 500px;
-    margin-right: 200px;
+header {
+    border-bottom: 10px solid #fdcd96;
+    border-top: 10px solid #fdcd96;
+    margin: 50px 0 100px;
 }
 
 figcaption {
-    font-size: 13px;
-    fill: #fdcd96;
-    margin-top: -50px;
     background-color: whitesmoke;
-    position: absolute;
     border: 3px solid whitesmoke;
+    font-size: 13px;
+    margin-top: -50px;
+    position: absolute;
 }
 
 h1 {
+    color: #d07f7d;
     font-family: 'Noto Sans', sans-serif;
     font-size: 96px;
-    color: #d07f7d;
-    margin-right: 300px;
-    margin-left: 650px;
-    margin-top: 10px;
-    line-height: 1.3;
+    margin: 10px 300px 50px 650px;
 }
 
-h2 {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 25px;
+h2,
+h3,
+h4 {
     color: #808080;
-    margin-right: 300px;
-    margin-left: 650px;
-    margin-top: -20px;
-    opacity: 70%;
+    font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 
-h3 {
-    font-family: 'Noto Sans', sans-serif;
-    margin-right: 300px;
-    margin-left: 650px;
-    color: #808080;
-    font-size: 16px;
-    font-weight: normal;
+h2 {
+    font-size: 25px;
+    opacity: 70%;
 }
 
+h3,
 h4 {
-    font-family: 'Noto Sans', sans-serif;
-    margin-right: 300px;
-    margin-left: 650px;
     font-size: 16px;
-    color: #808080;
-    font-weight: normal;
+}
+
+h2,
+h3,
+h4 {
+    margin: 20px 300px 20px 650px;
 }
 
 p {
     font-family: 'Merriweather', serif;
     font-size: 18px;
-    margin-right: 300px;
-    margin-left: 650px;
     line-height: 2.2;
+    margin: 30px 300px 30px 650px;
 }
 
-.quote1 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin-left: 450;
-    font-weight: 700;
-    color: #fdcd96;
-    margin-top: -30px;
-    margin-bottom: -60px;
-}
+/*===========
+IMAGES
+=============*/
 
-
-.quote2 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin-left: -100;
-    font-weight: 700;
-    color: #fdcd96;
-    margin-top: -30px;
-    margin-bottom: -60px;
-}
-
-.pullquote p {
-    font-family: 'Noto Sans', serif;
-    background-color: #fdcd96;
-    margin-right: 500px;
-    margin-left: 500px;
-    font-size: 20px;
-    border: 5px;
-    padding: 20px;
-    border-color: #fdcd96;
+.octopus-image {
+    width: 110%;
+    margin: 70px 200px 50px 500px;
 }
 
 .author-photo {
-    width: 9%;
-    border: 10px solid #fdcd96;
-    margin-left: 650px;
-    margin-right: 350px;
-    margin-top: 150px;
-    margin-bottom: 100px;
     background-color: #fdcd96;
+    border: 10px solid #fdcd96;
+    margin: 150px 350px 100px 650px;
+    width: 9%;
+}
+
+/* ============
+CLASSES
+===============*/
+
+.quote2,
+.quote1 {
+    color: #fdcd96;
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: -30px 0 -60px 600px;
+}
+
+.pullquote p {
+    background-color: #fdcd96;
+    border: 10px #fdcd96;
+    font-family: 'Noto Sans', serif;
+    font-size: 20px;
+    margin: 10px 500px 10px;
+    padding: 20px;
 }
 
 .author_header {
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
-    margin-left: 860px;
-    margin-top: -360px;
-    margin-right: 300px;
+    margin: -360px 300px 0px 850px;
     text-transform: uppercase;
-    color: #808080;
-    position: absolute;
 }
 
 .author_about {
     font-family: 'Merriweather', serif;
     font-size: 15px;
+    margin: -300px 300px 0 850px;
+}
+
+.author_header,
+.author_about {
     color: #808080;
-    margin-left: 860px;
-    margin-top: -300px;
-    margin-right: 300px;
     position: absolute;
 }
 
 .footer {
-    width: 1700px;
-    height: 500px;
     background-color: #fdcd96;
+    height: 500px;
     margin-top: 100px;
-    /*border: 500px solid #fdcd96;
-    padding: 500px #fdcd96; */
+    width: 100%;
 }
