@@ -43,7 +43,6 @@ h4 {
 
 h2 {
     font-size: 25px;
-    opacity: 70%;
 }
 
 h3,
@@ -126,7 +125,7 @@ CLASSES
 
 .author-header {
     font-size: 25px;
-    margin: -360px 300px 0px 850px;
+    margin: -360px 300px 0 850px;
     text-transform: uppercase;
 }
 
