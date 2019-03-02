@@ -1,0 +1,67 @@
+body {
+    width: 640px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3,
+.article-subheader,
+.read-more,
+.author-date {
+    font-family: 'source sans pro', sans-serif;
+}
+
+h3 {
+    background-color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    border: 4px, #c6e8ef;
+    padding: 2px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 5px;
+    right: 128px;
+}
+
+.article-square {
+    width: 640px;
+    height: 300px;
+    background: #fce3ea;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+}
+
+h2 {
+    font-family: 'dosis';
+    font-size: 25px;
+    position: relative;
+    bottom: 460px;
+}
+
+h2,
+.article-subheader,
+.author-date {
+    width: 360px;
+    left: 320px;
+}
+
+.article-subheader {
+    font-size: 14px;
+    position: relative;
+    bottom: 470px;
+}
+
+.author-date {
+    position: relative;
+}
+
+
+.article-image {
+    display: inline-block;
+    width: 240px;
+}
