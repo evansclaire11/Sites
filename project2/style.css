@@ -99,7 +99,6 @@ h3 {
     background-color: #b0e6e7;
     border: 2px solid #ffffff;
     bottom: 426px;
-    display: inline;
     font-weight: bold;
     left: 600px;
     padding: 3px;
@@ -122,7 +121,7 @@ h3,
 /* Article Title */
 h2 {
     bottom: 380px;
-    font-family: 'dosis';
+    font-family: 'dosis', sans-serif;
     font-size: 25px;
 }
 
