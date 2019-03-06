@@ -81,16 +81,17 @@ Images/Icons/Buttons
     left: 190px;
 }
 
-/* Button for the type of article */
+/* The Type of article */
 h3 {
     background-color: #f3fc72;
-    bottom: 203px;
+    bottom: 202px;
     border: 2px solid #ffffff;
     font-size: 14px;
     font-weight: bold;
-    padding: 2px;
-    right: 118px;
+    padding: 1px;
+    right: 130px;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 /* Button for Read More of article*/
@@ -118,6 +119,7 @@ h3,
     font-family: 'source sans pro', sans-serif;
 }
 
+/* Article Title */
 h2 {
     bottom: 380px;
     font-family: 'dosis';
@@ -132,6 +134,7 @@ hr {
     width: 360px;
 }
 
+/* Description of Article */
 .article-subheader {
     bottom: 390px;
     font-size: 14px;
