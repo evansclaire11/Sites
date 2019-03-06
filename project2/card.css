@@ -1,0 +1,148 @@
+/* ============
+Overall Card Specimen Code
+===============*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Background Box for Card Specimen */
+.article-square {
+    background: #fce3ea;
+    height: 260px;
+    left: 100px;
+    position: relative;
+    top: 50px;
+    width: 600px;
+    z-index: -1;
+}
+
+/* ================
+IMAGE AND ARTICLE TYPE
+=================== */
+
+.article-image {
+    bottom: 210px;
+    position: relative;
+    width: 260px;
+}
+
+/* type of article */
+.article-type {
+    background-color: #f3fc72;
+    border: 2px solid #ffffff;
+    bottom: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 160px;
+    padding: 1px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/*=================
+ARTICLE INFORMATION
+===================*/
+
+.article-information {
+    bottom: 410px;
+    left: 320px;
+    position: relative;
+    width: 360px;
+}
+
+/* Typeface information */
+h2 {
+    font-family: 'dosis', sans-serif;
+    font-size: 25px;
+}
+
+.article-subheader {
+    font-size: 14px;
+}
+
+.article-type,
+.article-subheader,
+.read-more,
+.author-date,
+.number-of-likes,
+.number-of-comments {
+    font-family: 'source sans pro', sans-serif;
+}
+
+.read-more,
+.author-date,
+.number-of-comments,
+.number-of-likes {
+    font-size: 10px;
+}
+
+.author-name {
+    font-style: italic;
+}
+
+/* Line Element */
+hr {
+    height: .5px;
+    width: 200px;
+    display: inline-block;
+}
+
+/* =================
+COMMENTS & LIKES
+==================== */
+
+.comments-likes {
+    width: 150px;
+    bottom: 480px;
+    position: relative;
+}
+
+.comment-button,
+.like-button,
+.number-of-likes,
+.number-of-comments {
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+.like-button {
+    left: 70px;
+}
+
+.number-of-likes {
+    left: 143px;
+    top: 10px;
+}
+
+.comment-button {
+    left: 135px;
+}
+
+.number-of-comments {
+    left: 205px;
+    top: 10px;
+}
+
+/* ================
+READ MORE BUTTON
+=================== */
+
+.read-more {
+    background-color: #b0e6e7;
+    border: 2px solid #ffffff;
+    bottom: 445px;
+    color: #000000;
+    font-weight: bold;
+    left: 610px;
+    padding: 3px;
+    position: relative;
+    text-decoration: none;
+}
