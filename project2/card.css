@@ -11,25 +11,15 @@ img {
     max-width: 100%;
 }
 
-/* Background Box for Card Specimen */
-.article-square {
-    background: #fce3ea;
-    height: 260px;
-    left: 100px;
-    position: relative;
-    top: 50px;
-    width: 600px;
-    z-index: -1;
-}
-
 /* ================
 IMAGE AND ARTICLE TYPE
 =================== */
 
 .article-image {
-    bottom: 210px;
+    top: 215px;
     position: relative;
-    width: 260px;
+    width: 250px;
+    z-index: 1;
 }
 
 /* type of article */
@@ -39,11 +29,11 @@ IMAGE AND ARTICLE TYPE
     bottom: 29px;
     font-size: 14px;
     font-weight: bold;
-    left: 160px;
+    left: 150px;
+    letter-spacing: 1.2px;
     padding: 1px;
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
 }
 
 /*=================
@@ -51,10 +41,11 @@ ARTICLE INFORMATION
 ===================*/
 
 .article-information {
-    bottom: 410px;
-    left: 320px;
+    background-color: #fce3ea;
+    left: 105px;
+    padding: 1px 10px 10px 200px;
     position: relative;
-    width: 360px;
+    width: 550px;
 }
 
 /* Typeface information */
@@ -99,18 +90,19 @@ COMMENTS & LIKES
 ==================== */
 
 .comments-likes {
-    width: 150px;
-    bottom: 480px;
+    bottom: 80px;
+    left: 10px;
     position: relative;
+    width: 150px;
 }
 
 .comment-button,
 .like-button,
 .number-of-likes,
 .number-of-comments {
-    width: 30px;
     display: inline-block;
     position: absolute;
+    width: 30px;
 }
 
 .like-button {
@@ -118,7 +110,7 @@ COMMENTS & LIKES
 }
 
 .number-of-likes {
-    left: 143px;
+    left: 140px;
     top: 10px;
 }
 
@@ -138,10 +130,10 @@ READ MORE BUTTON
 .read-more {
     background-color: #b0e6e7;
     border: 2px solid #ffffff;
-    bottom: 445px;
+    bottom: 40px;
     color: #000000;
     font-weight: bold;
-    left: 610px;
+    left: 565px;
     padding: 3px;
     position: relative;
     text-decoration: none;
