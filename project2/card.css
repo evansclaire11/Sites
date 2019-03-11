@@ -12,7 +12,7 @@ img {
 }
 
 /* ================
-IMAGE AND ARTICLE TYPE
+IMAGE AND ARTICLE SECTION
 =================== */
 
 .article-image {
@@ -23,7 +23,7 @@ IMAGE AND ARTICLE TYPE
     z-index: 1;
 }
 
-/* type of article */
+/* article tag/section */
 .article-type {
     background-color: #f3fc72;
     border: 2px solid #ffffff;
@@ -38,7 +38,7 @@ IMAGE AND ARTICLE TYPE
 }
 
 /*=================
-ARTICLE INFORMATION
+ARTICLE TITLE AND INFORMATION
 ===================*/
 
 .article-information {
