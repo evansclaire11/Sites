@@ -16,8 +16,9 @@ IMAGE AND ARTICLE TYPE
 =================== */
 
 .article-image {
-    top: 215px;
+    height: auto;
     position: relative;
+    top: 215px;
     width: 250px;
     z-index: 1;
 }
@@ -28,7 +29,7 @@ IMAGE AND ARTICLE TYPE
     border: 2px solid #ffffff;
     bottom: 29px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     left: 150px;
     letter-spacing: 1.2px;
     padding: 1px;
@@ -80,9 +81,9 @@ h2 {
 
 /* Line Element */
 hr {
+    display: inline-block;
     height: .5px;
     width: 200px;
-    display: inline-block;
 }
 
 /* =================
@@ -137,4 +138,5 @@ READ MORE BUTTON
     padding: 3px;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
 }
