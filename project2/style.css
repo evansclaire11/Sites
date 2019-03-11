@@ -1,0 +1,158 @@
+/* ============
+Overall Card Specimen Code
+===============*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Position Relative Elements */
+h3,
+.article-square,
+h2,
+.article-subheader,
+.author-date,
+.article-image,
+hr,
+.author-date,
+.read-more,
+.like-button,
+.comment-button,
+.number-of-comments,
+.number-of-likes {
+    position: relative;
+}
+
+/* Inline-Block Elements */
+hr,
+.article-image,
+h3 {
+    display: inline-block;
+}
+
+/* Background Box for Card Specimen */
+.article-square {
+    background: #fce3ea;
+    height: 250px;
+    left: 90px;
+    top: 50px;
+    width: 600px;
+    z-index: -1;
+}
+
+/* ===============
+Images/Icons/Buttons
+==================*/
+
+.article-image {
+    width: 240px;
+    bottom: 195px;
+    left: 15px;
+}
+
+.comment-button,
+.like-button {
+    width: 30px;
+}
+
+.like-button {
+    bottom: 465px;
+    left: 60px;
+}
+
+.comment-button {
+    bottom: 512px;
+    left: 120px;
+}
+
+/* Numbers of likes and comments */
+.number-of-likes {
+    bottom: 552px;
+    left: 130px;
+}
+
+.number-of-comments {
+    bottom: 579px;
+    left: 190px;
+}
+
+/* The Type of article */
+h3 {
+    background-color: #f3fc72;
+    bottom: 202px;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1px;
+    right: 130px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* Button for Read More of article*/
+.read-more {
+    background-color: #b0e6e7;
+    border: 2px solid #ffffff;
+    bottom: 426px;
+    font-weight: bold;
+    left: 600px;
+    padding: 3px;
+}
+
+/*==============
+Article Information (Words)
+================*/
+
+/* Typeface information */
+h3,
+.article-subheader,
+.read-more,
+.author-date,
+.number-of-likes,
+.number-of-comments {
+    font-family: 'source sans pro', sans-serif;
+}
+
+/* Article Title */
+h2 {
+    bottom: 380px;
+    font-family: 'dosis', sans-serif;
+    font-size: 25px;
+}
+
+h2,
+.article-subheader,
+.author-date,
+hr {
+    left: 320px;
+    width: 360px;
+}
+
+/* Description of Article */
+.article-subheader {
+    bottom: 390px;
+    font-size: 14px;
+}
+
+/* Line Element */
+hr {
+    bottom: 378px;
+    height: .5px;
+    width: 200px;
+}
+
+.author-date {
+    bottom: 395px;
+}
+
+.read-more,
+.author-date,
+.number-of-comments,
+.number-of-likes {
+    font-size: 10px;
+}

@@ -1,0 +1,142 @@
+/* ============
+Overall Card Specimen Code
+===============*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================
+IMAGE AND ARTICLE SECTION
+=================== */
+
+.article-image {
+    height: auto;
+    position: relative;
+    top: 215px;
+    width: 250px;
+    z-index: 1;
+}
+
+/* article tag/section */
+.article-type {
+    background-color: #f3fc72;
+    border: 2px solid #ffffff;
+    bottom: 29px;
+    font-size: 14px;
+    font-weight: 700;
+    left: 150px;
+    letter-spacing: 1.2px;
+    padding: 1px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/*=================
+ARTICLE TITLE AND INFORMATION
+===================*/
+
+.article-information {
+    background-color: #fce3ea;
+    left: 105px;
+    padding: 1px 10px 10px 200px;
+    position: relative;
+    width: 550px;
+}
+
+/* Typeface information */
+h2 {
+    font-family: 'dosis', sans-serif;
+    font-size: 25px;
+}
+
+.article-subheader {
+    font-size: 14px;
+}
+
+.article-type,
+.article-subheader,
+.read-more,
+.author-date,
+.number-of-likes,
+.number-of-comments {
+    font-family: 'source sans pro', sans-serif;
+}
+
+.read-more,
+.author-date,
+.number-of-comments,
+.number-of-likes {
+    font-size: 10px;
+}
+
+.author-name {
+    font-style: italic;
+}
+
+/* Line Element */
+hr {
+    display: inline-block;
+    height: .5px;
+    width: 200px;
+}
+
+/* =================
+COMMENTS & LIKES
+==================== */
+
+.comments-likes {
+    bottom: 80px;
+    left: 10px;
+    position: relative;
+    width: 150px;
+}
+
+.comment-button,
+.like-button,
+.number-of-likes,
+.number-of-comments {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+}
+
+.like-button {
+    left: 70px;
+}
+
+.number-of-likes {
+    left: 140px;
+    top: 10px;
+}
+
+.comment-button {
+    left: 135px;
+}
+
+.number-of-comments {
+    left: 205px;
+    top: 10px;
+}
+
+/* ================
+READ MORE BUTTON
+=================== */
+
+.read-more {
+    background-color: #b0e6e7;
+    border: 2px solid #ffffff;
+    bottom: 40px;
+    color: #000000;
+    font-weight: bold;
+    left: 565px;
+    padding: 3px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
