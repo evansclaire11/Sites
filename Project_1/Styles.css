@@ -4,7 +4,7 @@ GENERAL
 
 *:before,
 *:after {
-    Box-sizing: Border-box;
+    box-sizing: border-box;
 }
 
 body {
