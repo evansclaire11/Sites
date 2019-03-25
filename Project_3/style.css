@@ -1,3 +1,26 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
-    color: black;
+    background-color: #e5eeea;
+}
+
+h1 {
+    color: #6bcad4;
+    background-color: #ffffff;
+    font-family: 'Abril Fatface', serif;
+    font-size: 90px;
+    padding: 10%;
+    width: 100%;
+    height: 400px;
+}
+
+.scrolling-block {
+    background-color: #24321b;
+    height: 150px;
+    position: fixed;
+    width: 100%;
 }
