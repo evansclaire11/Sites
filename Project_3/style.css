@@ -9,7 +9,8 @@ OVERALL DESIGN
 }
 
 body {
-    background-image: linear-gradient(#e5eeea, #61935f)
+    background-image: linear-gradient(#e5eeea, #61935f);
+    background-color: #e5eeea;
 }
 
 /* ===========
@@ -18,9 +19,10 @@ HEADER
 
 header {
     background-color: #ffffff;
-    margin-bottom: 150px;
+    background-image: url(Fiyero.jpg);
     height: 100vh;
-    padding: 10%;
+    margin-bottom: 100px;
+    padding: 15%;
     width: 100%;
 }
 
@@ -39,7 +41,7 @@ h2 {
     position: relative;
     color: #61935f;
     font-size: 70px;
-    bottom: 90px;
+    /* bottom: 90px; */
 }
 
 
@@ -154,14 +156,22 @@ MEDIA QUERIES
 
 @media (min-width: 800px) {
 
-    h1 {
-        font-size: 400px;
+    /* HEADER */
+    h2 {
+        font-size: 80px;
     }
 
+    header {
+        padding: 2% 5% 5% 55%;
+    }
+
+    /* DESIGN ELEMENTS */
     .scrolling-block {
         margin-top: 20%;
         height: 25%
     }
+
+    /* TIMELINE CONTENT */
 
     figure {
         width: 45%;
@@ -175,7 +185,8 @@ MEDIA QUERIES
     .right-column,
     .left-column,
     .right-side,
-    .left-side {
+    .left-side,
+    h1 {
         position: relative;
     }
 
@@ -200,9 +211,8 @@ MEDIA QUERIES
 
 @media (min-width: 1280px) {
 
-    h1{
-        font-size: 400px;
-        left: 50%
+    h1 {
+        font-size: 150px;
     }
 
     .scrolling-block {
