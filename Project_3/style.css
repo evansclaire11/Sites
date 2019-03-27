@@ -9,7 +9,7 @@ OVERALL DESIGN
 }
 
 body {
-    background-image: linear-gradient(#e5eeea, #61935f);
+    /* background-image: linear-gradient(#e5eeea, #61935f); */
     background-color: #e5eeea;
 }
 
@@ -19,7 +19,8 @@ HEADER
 
 header {
     background-color: #ffffff;
-    background-image: url(Fiyero.jpg);
+    /* background-image: url(images/Fiyero.jpg);
+    background-repeat: no-repeat; */
     height: 100vh;
     margin-bottom: 100px;
     padding: 15%;
@@ -33,12 +34,12 @@ h2 {
 
 h1 {
     color: #6bcad4;
-    font-size: 90px;
+    font-size: 100px;
     height: 400px;
+    width: 300px;
 }
 
 h2 {
-    position: relative;
     color: #61935f;
     font-size: 70px;
     /* bottom: 90px; */
@@ -89,12 +90,9 @@ figcaption {
 }
 
 figure {
-    /* left: 3%; */
-    margin: auto;
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
     padding: 20px;
     position: relative;
-    /* right: 8%; */
     width: 93%;
 }
 
@@ -109,7 +107,6 @@ h3 {
     color: #e5eeea;
     font-size: 55px;
     margin: auto;
-    /* left: 3.5%; */
     padding: 3px 5px 3px 13px;
     position: relative;
     text-align: left;
@@ -120,39 +117,21 @@ h3 {
 }
 
 hr {
-    width: 80px;
-    height: 2px;
-    color: #6bcad4;
-    z-index: 10;
+    background-color: #6bcad4;
     display: inline-block;
+    height: 3px;
+    margin-top: 30px;
+    width: 100px;
 }
 
+.tvshow-title,
 .book-title {
     font-style: italic;
 }
 
-/* .timeline-content {
-    width: 90%;
-} */
-
-
 /* ===========
 MEDIA QUERIES
 ============== */
-
-@media (min-width: 375px) {
-    h1 {
-        font-size: 100px;
-    }
-
-    figure {
-        width: 93%;
-    }
-
-    h3 {
-        width: 93%;
-    }
-}
 
 @media (min-width: 800px) {
 
@@ -171,15 +150,20 @@ MEDIA QUERIES
         height: 25%
     }
 
+    .vertical-time-line {
+        z-index: 0;
+    }
+
     /* TIMELINE CONTENT */
 
     figure {
+        margin: 0 auto 100px;
         width: 45%;
     }
 
     h3 {
-        width: 45%;
         font-size: 70px;
+        width: 45%;
     }
 
     .right-column,
@@ -210,10 +194,6 @@ MEDIA QUERIES
 }
 
 @media (min-width: 1280px) {
-
-    h1 {
-        font-size: 150px;
-    }
 
     .scrolling-block {
         margin-top: 10%;
