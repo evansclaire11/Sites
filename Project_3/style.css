@@ -94,7 +94,6 @@ figcaption {
 figure {
     margin: 0 auto 150px;
     padding: 20px;
-    position: relative;
     width: 93%;
 }
 
@@ -103,14 +102,17 @@ figcaption {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+figure,
 h3 {
-    border-color: #e5eeea;
-    border-style: dashed;
+    position: relative;
+}
+
+h3 {
+    border: 5px dashed #e5eeea;
     color: #e5eeea;
     font-size: 55px;
     margin: auto;
     padding: 3px 5px 3px 13px;
-    position: relative;
     text-align: left;
     text-transform: uppercase;
     width: 93%;
