@@ -55,7 +55,7 @@ body::after {
 
 /* horizontal time line */
 body::before {
-    height: 20%;
+    height: 25%;
     margin-left: -10px;
     margin-top: 40%;
     width: 100%;
@@ -99,7 +99,14 @@ figure {
 
 p,
 figcaption {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+p,
+figcaption,
+h3 {
+    font-family: 'Nunito', sans-serif;
 }
 
 figure,
@@ -110,7 +117,7 @@ h3 {
 h3 {
     border: 5px dashed #e5eeea;
     color: #e5eeea;
-    font-size: 55px;
+    font-size: 60px;
     margin: auto;
     padding: 3px 5px 3px 13px;
     text-align: left;
@@ -200,7 +207,7 @@ MEDIA QUERIES
     /* PSUEDO ELEMENT */
     body::before {
         height: 30%;
-        margin-top: 7%;
+        margin-top: 5%;
     }
 
     /* TIMELINE CONTENT */
