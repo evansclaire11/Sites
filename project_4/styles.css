@@ -1,0 +1,15 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+header {
+    background: url(images/Bark_background.jpg) no-repeat center center;
+    height: hv;
+    width: auto;
+}
+
+img {
+    max-width: 100%;
+}
