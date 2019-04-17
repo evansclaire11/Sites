@@ -1,15 +1,86 @@
-*,
+/* ============
+OVERALL DESIGN
+================*, */
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
-header {
-    background: url(images/Bark_background.jpg) no-repeat center center;
-    height: hv;
-    width: auto;
-}
-
 img {
     max-width: 100%;
 }
+
+/* ============
+HEADER SECTION
+=============== */
+
+header {
+    background-image: url(images/Bark_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+}
+
+nav {
+    opacity: 0.5;
+    background-color: white;
+    padding: 30px 0 30px 0;
+}
+
+.navigation {
+    opacity: 1.0;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.navigation:hover {
+    background-color: hsl(11, 65%, 53%);
+    color: white;
+}
+
+nav:hover {
+    opacity: 1.0;
+}
+
+.date-location,
+h1 {
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.date-location {
+    background-color: hsl(11, 65%, 53%);
+    list-style-type: none;
+    width: 50%;
+    font-size: 30px;
+    padding: 30px;
+    line-height: 1;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+
+h1,
+p,
+h3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    color: hsl(11, 65%, 53%);
+}
+
+/* font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto Slab', serif; */
