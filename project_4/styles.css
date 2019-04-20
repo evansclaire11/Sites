@@ -91,15 +91,15 @@ nav ul a {
 /* Sustainability By Design Home Page */
 .home-page-title {
     color: white;
+    font-size: 50px;
+    line-height: 1;
+    padding: 30px;
     /* background-color: hsl(184 35% 63%); */
     position: relative;
-    top: 70%;
-    padding: 30px;
-    font-size: 40px;
-    line-height: 1;
     text-transform: uppercase;
+    top: 70%;
+    width: 375px;
     z-index: 1;
-    width: 80%;
 }
 
 /* Sustainability By Design Navigation */
@@ -141,7 +141,8 @@ p {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 80px;
+    text-align: center;
 }
 
 h3 {
@@ -179,15 +180,18 @@ SPEAKER SECTION
     margin: auto;
 }
 
-img {
+.speakers img {
     border-radius: 50%;
     margin-bottom: 10px;
+    width: 80%;
 }
 
 .speaker-info {
     list-style-type: none;
     text-align: center;
     margin-bottom: 70px;
+    padding: 0;
+
 }
 
 .speaker-name {
@@ -209,6 +213,15 @@ img {
 SCHEDULE
 ================ */
 
+.schedule ul {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.schedule ul li {
+    margin-bottom: 10px;
+}
+
 .schedule-info,
 .schedule-time {
     font-family: 'Roboto Slab', serif;
@@ -226,7 +239,6 @@ SCHEDULE
     padding: 7px;
     color: white;
     display: inline;
-    position: relative;
 
 }
 
