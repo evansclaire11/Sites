@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Slab:400,700" rel="stylesheet">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sustainability by Design Conference</title>
 </head>
 
@@ -46,7 +46,7 @@
                     making the design world, and the rest of the world, more sustainable. </p>
             </div>
             <div class="right-column">
-                <h3> Who should come?</h3>
+                <h3 data-aos="fade-left"> Who should come?</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
@@ -54,7 +54,7 @@
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
-            <h3>What Are People Saying?</h3>
+            <h3 data-aos="fade-right">What Are People Saying?</h3>
             <div class="quotes">
                 <p class="quote">"Quotes go right here"</p>
                 <p> - Name Here - </p>
@@ -64,7 +64,7 @@
 
         <section class="speakers">
             <h2>Speakers</h2>
-            <ul class="speaker-info">
+            <ul class="speaker-info" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <li><img src="images/Maxine_Bedat.jpg" alt=""></li>
                 <li class="speaker-name">Maxine Bedat</li>
                 <li class="speaker-title">Executive Director at New Standard Instiute</li>
@@ -75,7 +75,7 @@
                     Companies” in retail.</li>
             </ul>
 
-            <ul class="speaker-info">
+            <ul class="speaker-info" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <li><img src="images/kris.jpg" alt=""></li>
                 <li class="speaker-name">Kris De Decker</li>
                 <li class="speaker-title">Freelance Journalist & Creator of Low-Tech Magazine</li>
@@ -90,7 +90,7 @@
                 <li><a href=" https://solar.lowtechmagazine.com/"></a></li>
             </ul>
 
-            <ul class="speaker-info">
+            <ul class="speaker-info" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <li><img src="images/Michael_Braungart.jpg" alt=""></li>
                 <li class="speaker-name">Michael Braungart</li>
                 <li class="speaker-title">Chemist and Author</li>
@@ -283,6 +283,17 @@
         </footer>
 
     </div>
+
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 70,
+            offset: 120,
+            mirror: true
+        });
+    </script>
 
 </body>
 
