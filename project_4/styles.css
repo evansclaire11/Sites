@@ -16,6 +16,34 @@ body {
     overflow-x: hidden;
 }
 
+/* ================
+VARIABLES
+=================== */
+:root {
+    --color-brown: #30220C;
+}
+
+:root {
+    --color-green: #A1C349;
+}
+
+:root {
+    --color-gold: #E3D888;
+}
+
+:root {
+    --font-header: 'PT Sans', sans-serif;
+}
+
+:root {
+    --font-bold: 'PT Sans-700', sans-serif;
+}
+
+:root {
+    --font-paragraph: 'Roboto Slab', sans-serif;
+}
+
+
 /* =============
 NAVIGATION
 =============== */
