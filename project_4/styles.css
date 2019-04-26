@@ -20,27 +20,31 @@ body {
 VARIABLES
 =================== */
 :root {
-    --color-brown: #30220C;
+    --color-brown: #26221C;
 }
 
 :root {
-    --color-green: #A1C349;
+    --color-blue: hsl(184 35% 63%);
 }
 
 :root {
-    --color-gold: #E3D888;
+    --color-green: #396D3E;
 }
 
 :root {
-    --font-header: 'PT Sans', sans-serif;
+    --color-offwhite: #E0E0E0;
 }
 
 :root {
-    --font-bold: 'PT Sans-700', sans-serif;
+    --font-header: 'Raleway', sans-serif;
 }
 
 :root {
-    --font-paragraph: 'Roboto Slab', sans-serif;
+    --font-bold: 'Oxygen-700', sans-serif;
+}
+
+:root {
+    --font-paragraph: 'Oxygen', sans-serif;
 }
 
 
@@ -49,8 +53,8 @@ NAVIGATION
 =============== */
 
 nav {
-    opacity: 0.7;
-    background-color: white;
+    /* opacity: 0.7; */
+    background-color: var(--color-brown);
     padding: 30px 0;
     text-align: center;
     position: fixed;
@@ -68,7 +72,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    font-family: 'PT Sans', sans-serif;
+    font-family: var(--font-header);
     font-size: 15px;
     font-weight: 700;
 }
@@ -76,7 +80,7 @@ nav ul li {
 /* navigation links */
 nav ul a {
     text-decoration: none;
-    color: black;
+    color: var(--color-offwhite);
     text-transform: uppercase;
     padding: 30px 2px 30px 2px;
 }
@@ -87,14 +91,14 @@ nav h1 a {
     margin: auto;
     font-size: 20px;
     opacity: 1.0;
-    color: hsl(184 35% 63%);
+    color: var(--color-blue);
     text-transform: uppercase;
     letter-spacing: 3.2px;
 }
 
 /* Hover effects */
 nav ul a:hover {
-    background-color: hsl(11, 65%, 53%);
+    background-color: var(--color-green);
     color: white;
 }
 
@@ -118,7 +122,7 @@ header {
 .date-location,
 .header-title {
     color: white;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: var(--font-bold);
 }
 
 .home-page-info {
@@ -127,7 +131,7 @@ header {
 
 /* social media icons */
 .social-media-icons li {
-    fill: hsl(11, 65%, 53%);
+    fill: var(--color-blue);
     width: 40px;
     display: inline-block;
     position: relative;
@@ -138,7 +142,7 @@ header {
 /* home page screen date and location */
 .date,
 .location {
-    background-color: hsl(11, 65%, 53%);
+    background-color: var(--color-green);
     padding: 10px;
     font-size: 20px;
     color: white;
@@ -162,23 +166,22 @@ header {
 /* ============= */
 
 h1,
-p,
-h3 {
-    font-family: 'PT Sans', sans-serif;
+h3,
+h2 {
+    font-family: var(--font-header)
 }
 
 h2,
 h3 {
-    color: hsl(11, 65%, 53%);
+    color: var(--color-blue);
 }
 
 /* ================
 MISSION 
 ==================*/
 
-h2,
 p {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--font-paragraph)
 }
 
 h2 {
@@ -196,7 +199,7 @@ h3 {
 }
 
 .quotes {
-    background-color: hsl(11, 65%, 53%);
+    background-color: var(--color-green);
     color: white;
     padding: 30px;
     text-align: center;
@@ -211,9 +214,6 @@ h3 {
     width: 90%;
     margin: auto;
 }
-
-/* font-family: 'PT Sans', sans-serif;
-font-family: 'Roboto Slab', serif; */
 
 
 /* ===========
