@@ -16,6 +16,15 @@ body {
     overflow-x: hidden;
 }
 
+/* body::before {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/triangle.png);
+    position: fixed;
+    content: " ";
+    z-index: -4;
+} */
+
 /* ================
 VARIABLES
 =================== */
@@ -24,7 +33,7 @@ VARIABLES
 }
 
 :root {
-    --color-blue: hsl(184 35% 63%);
+    --color-blue: #80BDC2;
 }
 
 :root {
@@ -55,7 +64,7 @@ NAVIGATION
 nav {
     /* opacity: 0.7; */
     background-color: var(--color-brown);
-    padding: 30px 0;
+    padding: 30px 0 10px;
     text-align: center;
     position: fixed;
     top: -2px;
@@ -93,7 +102,7 @@ nav h1 a {
     opacity: 1.0;
     color: var(--color-blue);
     text-transform: uppercase;
-    letter-spacing: 3.2px;
+    letter-spacing: 3px;
 }
 
 /* Hover effects */
@@ -115,7 +124,7 @@ header {
     background-image: url(images/Bark_background.jpg);
     background-size: cover;
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     width: auto;
 }
 
@@ -129,21 +138,11 @@ header {
     margin-top: 300px;
 }
 
-/* social media icons */
-.social-media-icons li {
-    fill: var(--color-blue);
-    width: 40px;
-    display: inline-block;
-    position: relative;
-    top: 350px;
-    margin-right: 30px;
-}
-
 /* home page screen date and location */
 .date,
 .location {
     background-color: var(--color-green);
-    padding: 10px;
+    padding: 10px 30px;
     font-size: 20px;
     color: white;
     font-weight: 400;
@@ -153,14 +152,15 @@ header {
 /* Sustainability By Design Home Page Title*/
 .home-page-title {
     color: white;
+    text-shadow: 7px 7px 10px var(--color-brown);
     font-size: 45px;
     line-height: 1;
+    max-width: 100%;
     padding: 20px;
     position: relative;
     text-transform: uppercase;
     width: 300px;
     z-index: 1;
-    max-width: 100%;
 }
 
 /* ============= */
@@ -180,30 +180,38 @@ h3 {
 MISSION 
 ==================*/
 
+.mission p,
+h2,
+h3,
+.quotes {
+    text-align: center;
+}
+
 p {
     font-family: var(--font-paragraph)
 }
 
 h2 {
-    padding: 10px;
+    background-color: var(--color-brown);
     font-size: 60px;
-    text-align: center;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 50px 0;
 }
 
 h3 {
     font-size: 50px;
-    text-transform: uppercase;
     line-height: 1;
-    text-align: center;
     margin-top: 80px;
+    text-transform: uppercase;
 }
 
 .quotes {
     background-color: var(--color-green);
     color: white;
-    padding: 30px;
-    text-align: center;
     font-size: 20px;
+    padding: 30px;
 }
 
 /* removing default styles from button */
@@ -271,7 +279,7 @@ SCHEDULE
 }
 
 .schedule-time {
-    background-color: hsl(184 35% 63%);
+    background-color: var(--color-green);
     padding: 7px;
     color: white;
     display: inline-block;
@@ -293,6 +301,34 @@ h4 {
     border-left: 5px hsl(184 35% 63%) solid;
 }
 
+/* ===============
+FOOTER
+================= */
+
+.footer {
+    background-color: var(--color-brown);
+    height: 200px;
+    margin-top: 150px;
+}
+
+/* social media icons */
+.social-media-icons a {
+    fill: var(--color-blue);
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    padding: 10px;
+}
+
+footer p {
+    position: relative;
+    top: 70px;
+    left: 40px;
+    color: white;
+}
+
 
 /* ==============
 MEDIA QUERIES
@@ -304,7 +340,12 @@ MEDIA QUERIES
         font-size: 17px;
     }
 
+    nav h1 a {
+        font-size: 30px;
+    }
+
     .home-page-title {
+        width: 400px;
         font-size: 60px;
         top: 40%;
     }
@@ -320,24 +361,79 @@ MEDIA QUERIES
         margin: 0 4%;
     }
 
-}
-
-@media (min-width: 1200px) {
-    nav ul a {
-        padding: 30px 90px;
-    }
-
-    .home-page-title {
-        font-size: 80px;
-        width: 375px;
-        top: 40%;
-    }
-
     /*FIX THIS */
     .left-column,
     .right-column {
         display: inline-block;
-        width: 25%;
-        margin: auto;
+        width: 35%;
+        margin: 30px;
     }
+
+    .mission {
+        margin: auto;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .speakers {
+        width: 500px;
+    }
+
+    .speaker-info {
+        display: inline-block;
+    }
+
+    /* schedule */
+    .left-friday,
+    .right-saturday {
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    nav ul a {
+        padding: 30px 80px;
+    }
+
+    .home-page-title {
+        font-size: 80px;
+        width: 500px;
+        top: 40%;
+    }
+
+    .date-location {
+        font-size: 30px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 25%;
+    }
+
+    .speakers {
+        width: 300px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .speaker-info {
+        text-align: center;
+    }
+
+    .schedule {
+        text-align: center;
+    }
+
+    /* schedule */
+    .left-friday,
+    .right-saturday {
+        width: 30%;
+        display: inline-block;
+        margin: 40px;
+        vertical-align: top;
+        text-align: left;
+    }
+
 }
