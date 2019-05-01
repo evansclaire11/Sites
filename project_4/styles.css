@@ -65,12 +65,12 @@ nav {
     /* opacity: 0.7; */
     background-color: var(--color-brown);
     padding: 30px 0 10px;
-    text-align: center;
     position: fixed;
+    text-align: center;
     top: -2px;
-    z-index: 2;
-    width: 100%;
     max-width: 100%;
+    width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -84,6 +84,7 @@ nav ul li {
     font-family: var(--font-header);
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: 7px;
 }
 
 /* navigation links */
@@ -91,7 +92,7 @@ nav ul a {
     text-decoration: none;
     color: var(--color-offwhite);
     text-transform: uppercase;
-    padding: 30px 2px 30px 2px;
+    padding: 30px 9px;
 }
 
 /* Sustainability By Design Navigation */
@@ -113,6 +114,10 @@ nav ul a:hover {
 
 nav:hover {
     opacity: 1.0;
+}
+
+nav h1 a:hover {
+    color: var(--color-green);
 }
 
 /* ============
@@ -156,11 +161,31 @@ header {
     font-size: 45px;
     line-height: 1;
     max-width: 100%;
-    padding: 20px;
-    position: relative;
+    padding: 0 20px;
     text-transform: uppercase;
     width: 300px;
     z-index: 1;
+}
+
+/* REGISTER BUTTON */
+.home-page-register {
+    color: var(--color-brown);
+    background-color: var(--color-blue);
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    margin: 40px 20px;
+    margin-top: 40px;
+    padding: 30px 50px;
+    text-decoration: none;
+    border: 5px dashed var(--color-offwhite);
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.home-page-register:hover {
+    color: var(--color-offwhite);
+    background-color: var(--color-brown);
 }
 
 /* ============= */
@@ -171,9 +196,11 @@ h2 {
     font-family: var(--font-header)
 }
 
-h2,
-h3 {
+h2 {
     color: var(--color-blue);
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 /* ================
@@ -191,21 +218,19 @@ p {
     font-family: var(--font-paragraph)
 }
 
-h2 {
-    /* border-top: 10px var(--color-green) solid; */
-    background-color: var(--color-brown);
+.section-header {
     font-size: 60px;
-    padding: 10px;
+    background-color: var(--color-brown);
     width: 100%;
+    padding: 100px 0;
     text-transform: uppercase;
-    padding: 50px 0;
+    margin-top: 100px;
 }
 
 h3 {
     font-size: 50px;
     line-height: 1;
-    margin-top: 80px;
-    text-transform: uppercase;
+    /* margin-top: 80px; */
 }
 
 .quotes {
@@ -213,6 +238,11 @@ h3 {
     color: white;
     font-size: 20px;
     padding: 30px;
+    margin-top: 70px;
+}
+
+.quotes h3 {
+    color: rgb(158, 158, 158);
 }
 
 /* removing default styles from button */
@@ -220,31 +250,32 @@ h3 {
 
 .left-column,
 .right-column {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 
-/* ===========
+/* ================
 SPEAKER SECTION
-=============== */
+=================== */
 
 .speakers {
     width: 80%;
     margin: auto;
+    /* text-align: center; */
 }
 
 .speakers img {
     border-radius: 50%;
     margin-bottom: 10px;
-    width: 80%;
+    border: 8px dashed var(--color-brown);
 }
 
 .speaker-info {
     list-style-type: none;
-    text-align: center;
     margin-bottom: 70px;
     padding: 0;
+    text-align: center;
 
 }
 
@@ -275,13 +306,13 @@ SCHEDULE
 .schedule-info {
     list-style-type: none;
     padding: 10px 20px;
-    border: hsl(184 35% 63%) solid;
+    border: 4px dashed var(--color-blue);
     margin: auto;
 }
 
 .schedule-time {
     background-color: var(--color-green);
-    padding: 7px;
+    padding: 7px 30px;
     color: white;
     display: inline-block;
     margin: 30px 0 10px;
@@ -290,6 +321,7 @@ SCHEDULE
 
 .schedule-title {
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .left-friday,
@@ -299,11 +331,39 @@ SCHEDULE
 }
 
 h4 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: var(--font-header);
     text-transform: uppercase;
     font-size: 20px;
     padding: 10px;
-    border-left: 5px hsl(184 35% 63%) solid;
+    border-left: 5px var(--color-blue) solid;
+}
+
+/* ================
+REGISTER
+================== */
+
+.register {
+    background-color: var(--color-green);
+    padding: 200px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register a {
+    font-family: var(--font-header);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px dashed var(--color-offwhite);
+    color: white;
+    width: 200px;
+}
+
+/* hover effects for register button */
+
+.register a:hover {
+    background-color: var(--color-brown);
 }
 
 /* ===============
@@ -331,11 +391,13 @@ FOOTER
     fill: var(--color-green);
 }
 
-footer p {
+.follow-us {
     position: relative;
     top: 70px;
-    left: 40px;
+    /* left: 40px; */
     color: white;
+    margin-left: 40px;
+    max-width: 100%;
 }
 
 
@@ -343,20 +405,41 @@ footer p {
 MEDIA QUERIES
 ================= */
 
-@media (min-width: 800px) {
+@media (max-width: 420px) {
+    .register a {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 600px) {
+    .speakers {
+        width: 50%;
+    }
+
     nav ul a {
         padding: 30px 20px;
         font-size: 17px;
     }
+}
+
+
+@media (min-width: 800px) {
+    nav ul a {
+        padding: 30px 40px;
+        font-size: 17px;
+    }
 
     nav h1 a {
-        font-size: 30px;
+        letter-spacing: 6px;
     }
 
     .home-page-title {
         width: 400px;
-        font-size: 60px;
-        top: 40%;
+        font-size: 55px;
+    }
+
+    .home-page-register {
+        padding: 20px 100px;
     }
 
     .date-location {
@@ -375,7 +458,6 @@ MEDIA QUERIES
         margin: 0 4%;
     }
 
-    /*FIX THIS */
     .left-column,
     .right-column {
         display: inline-block;
@@ -390,11 +472,7 @@ MEDIA QUERIES
     }
 
     .speakers {
-        width: 500px;
-    }
-
-    .speaker-info {
-        display: inline-block;
+        width: 50%;
     }
 
     /* schedule */
@@ -411,17 +489,31 @@ MEDIA QUERIES
         font-size: 17px;
     }
 
+    /* register at bottom of page */
+    .register a {
+        font-size: 40px;
+    }
+
 }
 
 @media (min-width: 1200px) {
     nav ul a {
-        padding: 30px 80px;
+        padding: 30px 100px;
     }
 
     .home-page-title {
         font-size: 80px;
         width: 500px;
         top: 40%;
+    }
+
+    .home-page-info {
+        margin-top: 250px;
+    }
+
+    .home-page-register {
+        font-size: 25px;
+        padding: 20px 150px;
     }
 
     .date-location {
@@ -431,13 +523,23 @@ MEDIA QUERIES
     .left-column,
     .right-column {
         width: 25%;
+        vertical-align: top;
+        margin: 100px 30px;
     }
 
     .speakers {
-        width: 300px;
+        width: 100%;
+    }
+
+    .speakers ul {
+        width: 280px;
         display: inline-block;
-        padding: 0;
-        margin: 0;
+        margin: 70px;
+        vertical-align: top;
+    }
+
+    .speakers {
+        text-align: center;
     }
 
     .speaker-info {
