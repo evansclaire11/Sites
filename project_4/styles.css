@@ -448,6 +448,13 @@ MEDIA QUERIES
 
 
 @media (min-width: 800px) {
+
+    /* header 2 */
+    .section-header {
+        font-size: 70px;
+    }
+
+    /* navigation */
     nav ul a {
         font-size: 17px;
         padding: 30px 40px;
@@ -457,6 +464,7 @@ MEDIA QUERIES
         letter-spacing: 6px;
     }
 
+    /* header */
     .home-page-title {
         font-size: 55px;
         width: 400px;
@@ -470,6 +478,7 @@ MEDIA QUERIES
         font-size: 20px;
     }
 
+    /* mission section */
     .quotes {
         margin: auto;
         width: 60%;
@@ -497,6 +506,7 @@ MEDIA QUERIES
         vertical-align: top;
     }
 
+    /* speaker section */
     .speakers {
         width: 50%;
     }
@@ -522,11 +532,20 @@ MEDIA QUERIES
 
 }
 
+
 @media (min-width: 1200px) {
+
+    /* header 2 */
+    .section-header {
+        font-size: 80px;
+    }
+
+    /* navigation */
     nav ul a {
         padding: 30px 100px;
     }
 
+    /* home screen */
     .home-page-title {
         font-size: 80px;
         top: 40%;
@@ -546,6 +565,7 @@ MEDIA QUERIES
         font-size: 30px;
     }
 
+    /* mission section */
     .left-column,
     .right-column {
         margin: 100px 30px;
@@ -560,6 +580,7 @@ MEDIA QUERIES
         text-align: center;
     }
 
+    /* speaker section */
     .speakers {
         width: 100%;
     }
@@ -579,11 +600,11 @@ MEDIA QUERIES
         text-align: center;
     }
 
+    /* schedule */
     .schedule {
         text-align: center;
     }
 
-    /* schedule */
     .left-friday,
     .right-saturday {
         display: inline-block;
