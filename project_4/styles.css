@@ -79,31 +79,31 @@ nav ul {
 }
 
 nav ul li {
-    list-style-type: none;
     display: inline-block;
     font-family: var(--font-header);
     font-size: 15px;
     font-weight: 700;
+    list-style-type: none;
     margin-bottom: 7px;
 }
 
 /* navigation links */
 nav ul a {
-    text-decoration: none;
     color: var(--color-offwhite);
-    text-transform: uppercase;
     padding: 30px 9px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* Sustainability By Design Navigation */
 nav h1 a {
-    text-decoration: none;
-    margin: auto;
-    font-size: 20px;
-    opacity: 1.0;
     color: var(--color-blue);
-    text-transform: uppercase;
+    font-size: 20px;
     letter-spacing: 3px;
+    margin: auto;
+    opacity: 1.0;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* Hover effects */
@@ -127,6 +127,7 @@ HEADER SECTION
 header {
     background-attachment: fixed;
     background-image: url(images/Bark_background.jpg);
+    /* this is my own image */
     background-size: cover;
     height: 100vh;
     overflow: hidden;
@@ -147,21 +148,21 @@ header {
 .date,
 .location {
     background-color: var(--color-green);
-    padding: 10px 30px;
-    font-size: 20px;
     color: white;
+    font-size: 20px;
     font-weight: 400;
+    padding: 10px 30px;
     text-align: left;
 }
 
 /* Sustainability By Design Home Page Title*/
 .home-page-title {
     color: white;
-    text-shadow: 7px 7px 10px var(--color-brown);
     font-size: 45px;
     line-height: 1;
     max-width: 100%;
     padding: 0 20px;
+    text-shadow: 7px 7px 10px var(--color-brown);
     text-transform: uppercase;
     width: 300px;
     z-index: 1;
@@ -169,23 +170,22 @@ header {
 
 /* REGISTER BUTTON */
 .home-page-register {
-    color: var(--color-brown);
     background-color: var(--color-blue);
-    font-size: 20px;
-    position: relative;
-    top: 60px;
-    margin: 40px 20px;
-    margin-top: 40px;
-    padding: 30px 50px;
-    text-decoration: none;
     border: 5px dashed var(--color-offwhite);
+    color: var(--color-brown);
+    font-size: 20px;
+    margin: 40px 20px;
+    position: relative;
+    padding: 30px 50px;
     text-align: right;
+    text-decoration: none;
     text-transform: uppercase;
+    top: 60px;
 }
 
 .home-page-register:hover {
-    color: var(--color-offwhite);
     background-color: var(--color-brown);
+    color: var(--color-offwhite);
 }
 
 /* ============= */
@@ -199,8 +199,8 @@ h2 {
 h2 {
     color: var(--color-blue);
     font-size: 50px;
-    text-transform: uppercase;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 /* ================
@@ -219,12 +219,12 @@ p {
 }
 
 .section-header {
-    font-size: 60px;
     background-color: var(--color-brown);
-    width: 100%;
+    font-size: 60px;
+    margin-top: 100px;
     padding: 100px 0;
     text-transform: uppercase;
-    margin-top: 100px;
+    width: 100%;
 }
 
 h3 {
@@ -237,8 +237,8 @@ h3 {
     background-color: var(--color-green);
     color: white;
     font-size: 20px;
-    padding: 30px;
     margin-top: 70px;
+    padding: 30px;
 }
 
 .quotes h3 {
@@ -246,12 +246,27 @@ h3 {
 }
 
 /* removing default styles from button */
-.button-reset {}
+.button-reset {
+    background-color: var(--color-brown);
+    border: 2px dashed var(--color-offwhite);
+    color: var(--color-offwhite);
+    font-family: var(--font-paragraph);
+    font-size: 15px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.button-reset:hover {
+    background-color: var(--color-blue);
+    color: var(--color-brown);
+}
 
 .left-column,
 .right-column {
-    width: 80%;
     margin: auto;
+    width: 80%;
 }
 
 
@@ -260,15 +275,14 @@ SPEAKER SECTION
 =================== */
 
 .speakers {
-    width: 80%;
     margin: auto;
-    /* text-align: center; */
+    width: 80%;
 }
 
 .speakers img {
+    border: 8px dashed var(--color-brown);
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 8px dashed var(--color-brown);
 }
 
 .speaker-info {
@@ -304,18 +318,18 @@ SCHEDULE
 }
 
 .schedule-info {
-    list-style-type: none;
-    padding: 10px 20px;
     border: 4px dashed var(--color-blue);
+    list-style-type: none;
     margin: auto;
+    padding: 10px 20px;
 }
 
 .schedule-time {
     background-color: var(--color-green);
-    padding: 7px 30px;
     color: white;
     display: inline-block;
     margin: 30px 0 10px;
+    padding: 7px 30px;
     text-transform: uppercase;
 }
 
@@ -324,18 +338,29 @@ SCHEDULE
     text-transform: uppercase;
 }
 
+/* special talk colors */
+.talk-header {
+    border: 4px dashed var(--color-brown);
+}
+
+.talk-time {
+    background-color: var(--color-brown);
+}
+
+/*  */
+
 .left-friday,
 .right-saturday {
-    width: 80%;
     margin: auto;
+    width: 80%;
 }
 
 h4 {
+    border-left: 5px var(--color-blue) solid;
     font-family: var(--font-header);
-    text-transform: uppercase;
     font-size: 20px;
     padding: 10px;
-    border-left: 5px var(--color-blue) solid;
+    text-transform: uppercase;
 }
 
 /* ================
@@ -344,19 +369,19 @@ REGISTER
 
 .register {
     background-color: var(--color-green);
+    margin-top: 100px;
     padding: 200px 0;
     text-align: center;
-    margin-top: 100px;
 }
 
 .register a {
-    font-family: var(--font-header);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 10px;
     border: 1px dashed var(--color-offwhite);
     color: white;
+    font-family: var(--font-header);
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
     width: 200px;
 }
 
@@ -378,13 +403,13 @@ FOOTER
 
 /* social media icons */
 .social-media-icons a {
-    fill: var(--color-blue);
-    width: 40px;
     display: inline-block;
-    position: relative;
-    top: 60px;
+    fill: var(--color-blue);
     left: 30px;
+    position: relative;
     padding: 10px;
+    top: 60px;
+    width: 40px;
 }
 
 .social-media-icons a:hover {
@@ -392,12 +417,11 @@ FOOTER
 }
 
 .follow-us {
-    position: relative;
-    top: 70px;
-    /* left: 40px; */
     color: white;
     margin-left: 40px;
     max-width: 100%;
+    position: relative;
+    top: 70px;
 }
 
 
@@ -417,16 +441,16 @@ MEDIA QUERIES
     }
 
     nav ul a {
-        padding: 30px 20px;
         font-size: 17px;
+        padding: 30px 20px;
     }
 }
 
 
 @media (min-width: 800px) {
     nav ul a {
-        padding: 30px 40px;
         font-size: 17px;
+        padding: 30px 40px;
     }
 
     nav h1 a {
@@ -434,8 +458,8 @@ MEDIA QUERIES
     }
 
     .home-page-title {
-        width: 400px;
         font-size: 55px;
+        width: 400px;
     }
 
     .home-page-register {
@@ -447,22 +471,24 @@ MEDIA QUERIES
     }
 
     .quotes {
-        width: 70%;
         margin: auto;
+        width: 60%;
+        padding: 30px 100px;
+        text-align: center;
     }
 
     .left-column,
     .right-column {
         display: inline-block;
-        width: 40%;
         margin: 0 4%;
+        width: 40%;
     }
 
     .left-column,
     .right-column {
         display: inline-block;
-        width: 35%;
         margin: 30px;
+        width: 35%;
     }
 
     .mission {
@@ -503,8 +529,8 @@ MEDIA QUERIES
 
     .home-page-title {
         font-size: 80px;
-        width: 500px;
         top: 40%;
+        width: 500px;
     }
 
     .home-page-info {
@@ -522,9 +548,16 @@ MEDIA QUERIES
 
     .left-column,
     .right-column {
-        width: 25%;
-        vertical-align: top;
         margin: 100px 30px;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    .quotes {
+        margin: auto;
+        width: 35%;
+        padding: 30px 150px;
+        text-align: center;
     }
 
     .speakers {
@@ -532,10 +565,10 @@ MEDIA QUERIES
     }
 
     .speakers ul {
-        width: 280px;
         display: inline-block;
         margin: 70px;
         vertical-align: top;
+        width: 280px;
     }
 
     .speakers {
@@ -553,11 +586,11 @@ MEDIA QUERIES
     /* schedule */
     .left-friday,
     .right-saturday {
-        width: 30%;
         display: inline-block;
         margin: 40px;
-        vertical-align: top;
         text-align: left;
+        vertical-align: top;
+        width: 30%;
     }
 
 }
