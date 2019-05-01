@@ -1,0 +1,596 @@
+/* ============
+OVERALL DESIGN
+================*, */
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* body::before {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/triangle.png);
+    position: fixed;
+    content: " ";
+    z-index: -4;
+} */
+
+/* ================
+VARIABLES
+=================== */
+:root {
+    --color-brown: #26221C;
+}
+
+:root {
+    --color-blue: #80BDC2;
+}
+
+:root {
+    --color-green: #396D3E;
+}
+
+:root {
+    --color-offwhite: #E0E0E0;
+}
+
+:root {
+    --font-header: 'Raleway', sans-serif;
+}
+
+:root {
+    --font-bold: 'Oxygen-700', sans-serif;
+}
+
+:root {
+    --font-paragraph: 'Oxygen', sans-serif;
+}
+
+
+/* =============
+NAVIGATION
+=============== */
+
+nav {
+    /* opacity: 0.7; */
+    background-color: var(--color-brown);
+    padding: 30px 0 10px;
+    position: fixed;
+    text-align: center;
+    top: -2px;
+    max-width: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: var(--font-header);
+    font-size: 15px;
+    font-weight: 700;
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+/* navigation links */
+nav ul a {
+    color: var(--color-offwhite);
+    padding: 30px 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Sustainability By Design Navigation */
+nav h1 a {
+    color: var(--color-blue);
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: 1.0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Hover effects */
+nav ul a:hover {
+    background-color: var(--color-green);
+    color: white;
+}
+
+nav:hover {
+    opacity: 1.0;
+}
+
+nav h1 a:hover {
+    color: var(--color-green);
+}
+
+/* ============
+HEADER SECTION
+=============== */
+
+header {
+    background-attachment: fixed;
+    background-image: url(images/Bark_background.jpg);
+    /* this is my own image */
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    width: auto;
+}
+
+.date-location,
+.header-title {
+    color: white;
+    font-family: var(--font-bold);
+}
+
+.home-page-info {
+    margin-top: 300px;
+}
+
+/* home page screen date and location */
+.date,
+.location {
+    background-color: var(--color-green);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+/* Sustainability By Design Home Page Title*/
+.home-page-title {
+    color: white;
+    font-size: 45px;
+    line-height: 1;
+    max-width: 100%;
+    padding: 0 20px;
+    text-shadow: 7px 7px 10px var(--color-brown);
+    text-transform: uppercase;
+    width: 300px;
+    z-index: 1;
+}
+
+/* REGISTER BUTTON */
+.home-page-register {
+    background-color: var(--color-blue);
+    border: 5px dashed var(--color-offwhite);
+    color: var(--color-brown);
+    font-size: 20px;
+    margin: 40px 20px;
+    position: relative;
+    padding: 30px 50px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 60px;
+}
+
+.home-page-register:hover {
+    background-color: var(--color-brown);
+    color: var(--color-offwhite);
+}
+
+/* ============= */
+
+h1,
+h3,
+h2 {
+    font-family: var(--font-header)
+}
+
+h2 {
+    color: var(--color-blue);
+    font-size: 50px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* ================
+MISSION 
+==================*/
+
+.mission p,
+h2,
+h3,
+.quotes {
+    text-align: center;
+}
+
+p {
+    font-family: var(--font-paragraph)
+}
+
+.section-header {
+    background-color: var(--color-brown);
+    font-size: 60px;
+    margin-top: 100px;
+    padding: 100px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+h3 {
+    font-size: 50px;
+    line-height: 1;
+    /* margin-top: 80px; */
+}
+
+.quotes {
+    background-color: var(--color-green);
+    color: white;
+    font-size: 20px;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.quotes h3 {
+    color: rgb(158, 158, 158);
+}
+
+/* removing default styles from button */
+.button-reset {
+    background-color: var(--color-brown);
+    border: 2px dashed var(--color-offwhite);
+    color: var(--color-offwhite);
+    font-family: var(--font-paragraph);
+    font-size: 15px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.button-reset:hover {
+    background-color: var(--color-blue);
+    color: var(--color-brown);
+}
+
+.left-column,
+.right-column {
+    margin: auto;
+    width: 80%;
+}
+
+
+/* ================
+SPEAKER SECTION
+=================== */
+
+.speakers {
+    margin: auto;
+    width: 80%;
+}
+
+.speakers img {
+    border: 8px dashed var(--color-brown);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.speaker-info {
+    list-style-type: none;
+    margin-bottom: 70px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.speaker-name {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.speaker-title {
+    margin-bottom: 10px;
+}
+
+.speaker-name,
+.speaker-title {
+    font-size: 18px;
+}
+
+
+/* =============
+SCHEDULE
+================ */
+
+.schedule-info,
+.schedule-time {
+    font-family: 'Roboto Slab', serif;
+}
+
+.schedule-info {
+    border: 4px dashed var(--color-blue);
+    list-style-type: none;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.schedule-time {
+    background-color: var(--color-green);
+    color: white;
+    display: inline-block;
+    margin: 30px 0 10px;
+    padding: 7px 30px;
+    text-transform: uppercase;
+}
+
+.schedule-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* special talk colors */
+.talk-header {
+    border: 4px dashed var(--color-brown);
+}
+
+.talk-time {
+    background-color: var(--color-brown);
+}
+
+/*  */
+
+.left-friday,
+.right-saturday {
+    margin: auto;
+    width: 80%;
+}
+
+h4 {
+    border-left: 5px var(--color-blue) solid;
+    font-family: var(--font-header);
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* ================
+REGISTER
+================== */
+
+.register {
+    background-color: var(--color-green);
+    margin-top: 100px;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.register a {
+    border: 1px dashed var(--color-offwhite);
+    color: white;
+    font-family: var(--font-header);
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+/* hover effects for register button */
+
+.register a:hover {
+    background-color: var(--color-brown);
+}
+
+/* ===============
+FOOTER
+================= */
+
+.footer {
+    background-color: var(--color-brown);
+    height: 200px;
+    margin-top: 150px;
+}
+
+/* social media icons */
+.social-media-icons a {
+    display: inline-block;
+    fill: var(--color-blue);
+    left: 30px;
+    position: relative;
+    padding: 10px;
+    top: 60px;
+    width: 40px;
+}
+
+.social-media-icons a:hover {
+    fill: var(--color-green);
+}
+
+.follow-us {
+    color: white;
+    margin-left: 40px;
+    max-width: 100%;
+    position: relative;
+    top: 70px;
+}
+
+
+/* ==============
+MEDIA QUERIES
+================= */
+
+@media (max-width: 420px) {
+    .register a {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 600px) {
+    .speakers {
+        width: 50%;
+    }
+
+    nav ul a {
+        font-size: 17px;
+        padding: 30px 20px;
+    }
+}
+
+
+@media (min-width: 800px) {
+    nav ul a {
+        font-size: 17px;
+        padding: 30px 40px;
+    }
+
+    nav h1 a {
+        letter-spacing: 6px;
+    }
+
+    .home-page-title {
+        font-size: 55px;
+        width: 400px;
+    }
+
+    .home-page-register {
+        padding: 20px 100px;
+    }
+
+    .date-location {
+        font-size: 20px;
+    }
+
+    .quotes {
+        margin: auto;
+        width: 60%;
+        padding: 30px 100px;
+        text-align: center;
+    }
+
+    .left-column,
+    .right-column {
+        display: inline-block;
+        margin: 0 4%;
+        width: 40%;
+    }
+
+    .left-column,
+    .right-column {
+        display: inline-block;
+        margin: 30px;
+        width: 35%;
+    }
+
+    .mission {
+        margin: auto;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .speakers {
+        width: 50%;
+    }
+
+    /* schedule */
+    .left-friday,
+    .right-saturday {
+        width: 60%;
+    }
+
+    .schedule-time {
+        font-size: 20px;
+    }
+
+    .schedule-info {
+        font-size: 17px;
+    }
+
+    /* register at bottom of page */
+    .register a {
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    nav ul a {
+        padding: 30px 100px;
+    }
+
+    .home-page-title {
+        font-size: 80px;
+        top: 40%;
+        width: 500px;
+    }
+
+    .home-page-info {
+        margin-top: 250px;
+    }
+
+    .home-page-register {
+        font-size: 25px;
+        padding: 20px 150px;
+    }
+
+    .date-location {
+        font-size: 30px;
+    }
+
+    .left-column,
+    .right-column {
+        margin: 100px 30px;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    .quotes {
+        margin: auto;
+        width: 35%;
+        padding: 30px 150px;
+        text-align: center;
+    }
+
+    .speakers {
+        width: 100%;
+    }
+
+    .speakers ul {
+        display: inline-block;
+        margin: 70px;
+        vertical-align: top;
+        width: 280px;
+    }
+
+    .speakers {
+        text-align: center;
+    }
+
+    .speaker-info {
+        text-align: center;
+    }
+
+    .schedule {
+        text-align: center;
+    }
+
+    /* schedule */
+    .left-friday,
+    .right-saturday {
+        display: inline-block;
+        margin: 40px;
+        text-align: left;
+        vertical-align: top;
+        width: 30%;
+    }
+
+}
