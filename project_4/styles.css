@@ -400,7 +400,7 @@ REGISTER SECTION
 }
 
 .register-text {
-    color: var(--color-offwhite);
+    color: white;
     font-family: var(--font-header);
     font-size: 18px;
     margin-bottom: 40px;
