@@ -29,7 +29,8 @@ body {
 VARIABLES
 =================== */
 :root {
-    --color-brown: #26221C;
+    /* --color-brown: #26221C; */
+    --color-brown: #3d352a;
 }
 
 :root {
@@ -245,22 +246,24 @@ h3 {
     color: rgb(158, 158, 158);
 }
 
-/* removing default styles from button */
+/* next button on quotes */
 .button-reset {
     background-color: var(--color-brown);
     border: 2px dashed var(--color-offwhite);
+    border-radius: 50%;
     color: var(--color-offwhite);
     font-family: var(--font-paragraph);
     font-size: 15px;
     text-transform: uppercase;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    transition: transform 1s;
+    height: 90px;
+    width: 90px;
 }
 
 .button-reset:hover {
     background-color: var(--color-blue);
     color: var(--color-brown);
+    transform: rotate(360deg);
 }
 
 .left-column,
@@ -364,13 +367,13 @@ h4 {
 }
 
 /* ================
-REGISTER
+REGISTER SECTION
 ================== */
 
 .register {
     background-color: var(--color-green);
     margin-top: 100px;
-    padding: 200px 0;
+    padding: 100px 30px;
     text-align: center;
 }
 
@@ -382,13 +385,21 @@ REGISTER
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: transform .2s;
     width: 200px;
 }
 
 /* hover effects for register button */
-
 .register a:hover {
     background-color: var(--color-brown);
+    transform: scale(3);
+}
+
+.register-text {
+    color: var(--color-offwhite);
+    font-family: var(--font-paragraph);
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
 /* ===============
@@ -399,29 +410,32 @@ FOOTER
     background-color: var(--color-brown);
     height: 200px;
     margin-top: 150px;
+    padding: 60px 40px 10px;
 }
 
 /* social media icons */
 .social-media-icons a {
     display: inline-block;
     fill: var(--color-blue);
-    left: 30px;
-    position: relative;
-    padding: 10px;
-    top: 60px;
+    padding: 15px;
+    transition: transform .2s;
     width: 40px;
 }
 
 .social-media-icons a:hover {
     fill: var(--color-green);
+    transform: scale(1.5);
 }
 
 .follow-us {
     color: white;
-    margin-left: 40px;
     max-width: 100%;
-    position: relative;
-    top: 70px;
+}
+
+.copyright {
+    color: var(--color-offwhite);
+    font-family: var(--font-paragraph);
+    font-size: 9px;
 }
 
 
@@ -464,6 +478,19 @@ MEDIA QUERIES
         letter-spacing: 6px;
     }
 
+    nav ul a::before {
+        color: var(--color-blue);
+        margin-right: 15px;
+        content: "|"
+    }
+
+    nav ul a::after {
+        color: var(--color-blue);
+        margin-left: 15px;
+        content: "|";
+
+    }
+
     /* header */
     .home-page-title {
         font-size: 55px;
@@ -490,6 +517,7 @@ MEDIA QUERIES
     .right-column {
         display: inline-block;
         margin: 0 4%;
+        vertical-align: top;
         width: 40%;
     }
 
@@ -504,6 +532,11 @@ MEDIA QUERIES
         margin: auto;
         text-align: center;
         vertical-align: top;
+    }
+
+    .button-reset {
+        height: 60px;
+        width: 60px;
     }
 
     /* speaker section */
@@ -528,6 +561,10 @@ MEDIA QUERIES
     /* register at bottom of page */
     .register a {
         font-size: 40px;
+    }
+
+    .register-text {
+        font-size: 22px;
     }
 
 }
