@@ -125,7 +125,7 @@ header {
     background-image: url(images/Bark_background.jpg);
     /* this is my own image */
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     width: auto;
 }
