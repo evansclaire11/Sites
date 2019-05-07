@@ -42,11 +42,11 @@ VARIABLES
 }
 
 :root {
-    --font-bold: 'Oxygen-700', sans-serif;
+    --font-bold: 'PT Sans', sans-serif;
 }
 
 :root {
-    --font-paragraph: 'Oxygen', sans-serif;
+    --font-paragraph: 'PT Sans', sans-serif;
 }
 
 
@@ -205,15 +205,15 @@ h2 {
 MISSION 
 ==================*/
 
-.mission p,
 h2,
 h3,
 .quotes {
     text-align: center;
 }
 
-p {
-    font-family: var(--font-paragraph)
+.mission-text {
+    font-family: var(--font-paragraph);
+    line-height: 1.5;
 }
 
 .section-header {
@@ -293,6 +293,11 @@ SPEAKER SECTION
 
 }
 
+.speaker-name,
+.speaker-title {
+    font-family: var(--font-header);
+}
+
 .speaker-name {
     font-weight: 700;
     text-transform: uppercase;
@@ -307,6 +312,15 @@ SPEAKER SECTION
     font-size: 18px;
 }
 
+.speaker-paragraph {
+    font-family: var(--font-paragraph);
+}
+
+/* hover effects for speakers */
+.speaker-info img:hover {
+    border: 8px dashed var(--color-blue);
+}
+
 
 /* =============
 SCHEDULE
@@ -314,7 +328,7 @@ SCHEDULE
 
 .schedule-info,
 .schedule-time {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--font-paragraph);
 }
 
 .schedule-info {
@@ -385,16 +399,16 @@ REGISTER SECTION
     width: 200px;
 }
 
+.register-text {
+    color: var(--color-offwhite);
+    font-family: var(--font-header);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
 /* hover effects for register button */
 .register a:hover {
     background-color: var(--color-brown);
-}
-
-.register-text {
-    color: var(--color-offwhite);
-    font-family: var(--font-paragraph);
-    font-size: 18px;
-    margin-bottom: 40px;
 }
 
 /* ===============
@@ -429,8 +443,12 @@ FOOTER
 
 .copyright {
     color: var(--color-offwhite);
-    font-family: var(--font-paragraph);
     font-size: 9px;
+}
+
+.follow-us,
+.copyright {
+    font-family: var(--font-paragraph);
 }
 
 
