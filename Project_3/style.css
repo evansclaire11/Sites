@@ -1,0 +1,240 @@
+/* ==============
+OVERALL DESIGN
+================ */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5eeea;
+}
+
+/* ===========
+HEADER
+============== */
+
+header {
+    background-color: #ffffff;
+    height: 100vh;
+    margin-bottom: 100px;
+    padding: 15%;
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+h1 {
+    color: #6bcad4;
+    font-size: 100px;
+    height: 400px;
+    width: 300px;
+}
+
+h2 {
+    color: #61935f;
+    font-size: 70px;
+}
+
+
+/* ==============
+VISUAL/PSUEDO ELEMENTS 
+=================*/
+
+body::before,
+body::after {
+    background-color: #24321b;
+    content: "";
+    position: fixed;
+}
+
+/* horizontal time line */
+body::before {
+    height: 25%;
+    margin-left: -10px;
+    margin-top: 40%;
+    width: 100%;
+    z-index: -3;
+}
+
+/* vertical time line */
+body::after {
+    bottom: 0;
+    height: 100vh;
+    left: 50%;
+    top: 0;
+    width: 10px;
+    z-index: -1;
+}
+
+
+/* =============
+TIMELINE CONTENT
+================ */
+
+img {
+    max-width: 100%;
+}
+
+figcaption,
+figure {
+    background-color: #ffffff;
+}
+
+figcaption {
+    padding: 0 5px 10px 5px;
+}
+
+/* images */
+figure {
+    margin: 0 auto 150px;
+    padding: 20px;
+    width: 93%;
+}
+
+p,
+figcaption {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+p,
+figcaption,
+h3 {
+    font-family: 'Nunito', sans-serif;
+}
+
+figure,
+h3 {
+    position: relative;
+}
+
+h3 {
+    border: 5px dashed #e5eeea;
+    color: #e5eeea;
+    font-size: 60px;
+    margin: auto;
+    padding: 3px 5px 3px 13px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 93%;
+    z-index: 0;
+}
+
+hr {
+    background-color: #6bcad4;
+    display: inline-block;
+    height: 3px;
+    margin-top: 30px;
+    width: 100px;
+}
+
+.tvshow-title,
+.book-title {
+    font-style: italic;
+}
+
+/* ===============
+MEDIA QUERIES
+================== */
+
+@media (min-width: 800px) {
+
+    /* HEADER */
+    h2 {
+        font-size: 80px;
+    }
+
+    header {
+        padding: 2% 5% 5% 55%;
+    }
+
+    /* PSUEDO ELEMENTS */
+    body::before {
+        height: 25%;
+        margin-top: 20%;
+    }
+
+    body::after {
+        z-index: 0;
+    }
+
+    /* TIMELINE CONTENT */
+    figure {
+        margin: 0 auto 100px;
+        width: 45%;
+    }
+
+    h3 {
+        font-size: 70px;
+        width: 45%;
+    }
+
+    .right-column,
+    .left-column,
+    .right-side,
+    .left-side,
+    h1 {
+        position: relative;
+    }
+
+    .right-column {
+        left: 25%;
+    }
+
+    .left-column {
+        right: 24%;
+        width: 45%
+    }
+
+    .right-side {
+        left: 25%;
+    }
+
+    .left-side {
+        right: 24%;
+        text-align: right;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    /* PSUEDO ELEMENT */
+    body::before {
+        height: 30%;
+        margin-top: 5%;
+    }
+
+    /* TIMELINE CONTENT */
+    figure {
+        width: 30%;
+    }
+
+    h3 {
+        width: 30%;
+    }
+
+    .right-column {
+        left: 17%;
+    }
+
+    .left-column {
+        right: 16.5%;
+        width: 30%;
+    }
+
+    .right-side {
+        left: 17%;
+    }
+
+    .left-side {
+        right: 16.5%;
+        text-align: right;
+    }
+
+}
